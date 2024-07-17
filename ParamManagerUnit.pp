@@ -293,7 +293,7 @@ begin
   Process(PVmtFieldTable(PVMT(Param.ClassType)^.vFieldTable), Param, '');
 
   NameValueMap.Free;
-
+  Result := True;
 end;
 
 function InitFromParameters(Param: TValue): Boolean;
